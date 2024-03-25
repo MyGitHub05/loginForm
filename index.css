@@ -16,15 +16,15 @@ body{
     align-items: center;
 }
 main{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     height: 100vh;
     width: 70%;
     background-color: #F9FAFB;
 }
 .div_img{
-    width: 40%;
-    height: 100%;
-    display: inline-block;
     position: relative;
+    border: 1px solid black;
 }
 .credits{
     position: absolute;
@@ -37,9 +37,9 @@ main{
 span:hover{
     text-decoration: underline;
 }
-img{
+.bg_img{
     width: var(--width);
-    height: 100%;
+    height: 100vh;
     object-fit: cover; 
 }
 .twice_logo{
@@ -53,13 +53,14 @@ img{
     /*background-color: rgba(255, 255, 255, 0.5);*/
 
 }
+.twice_img{
+    height: 100px;
+    object-fit: cover; 
+}
 
 .div_left_side{
 border: 1px solid red;
-width: 50px;
-height: 100%;
-display: inline;
+margin: 10px;
 padding: 20px;
-margin: 20px;
 
 }
