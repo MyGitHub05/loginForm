@@ -94,6 +94,7 @@ fieldset{
     grid-gap: 50px;
     border: none;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    
 }
 .h3_inside_fieldset{
     height: 40px;

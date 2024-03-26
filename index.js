@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", ()=>{
+    const form = document.querySelector("#form");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        getValueInTheForm();
+    });
+});
+
 const submit_btn = document.querySelector(".create_acc_btn");
 
 
@@ -14,10 +23,9 @@ function getValueInTheForm(){
     let password = form.elements.password.value;
     let con_password = form.elements.con_password.value;
 
-    console.log(form);
-
     if(password !== con_password){
-        const warning = document.querySelector(".warning").innerHTML = "*Password do not match";
+        const warning = document.querySelector(".warning");
+        warning.innerHTML = "*Password do not match";
         warning.style.color = "#FF3871";
 
     }else{
