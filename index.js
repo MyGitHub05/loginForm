@@ -27,6 +27,8 @@ function getValueInTheForm(){
         const warning = document.querySelector(".warning");
         warning.innerHTML = "*Password do not match";
         warning.style.color = "#FF3871";
+        form.elements.password.style.borderColor = "#FF3871";
+        form.elements.con_password.style.borderColor = "#FF3871";
 
     }else{
         
