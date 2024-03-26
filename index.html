@@ -16,51 +16,60 @@
        <div class="twice_logo">
          <img class="twice_img" src="./img/twicelogo-removebg-preview.png" alt="dahyun logo">
        </div>
-       <div class="div_left_side"> 
-        <p class="lyrics"> 
-            [Chorus: Dahyun, Chaeyoung]
-            Nega neomu akkawo
-            Ne namjareul bon jeogeun eopseodo (Neomu akkawo)
-            Mwora seolmyeonghal sun eopseodo (Neomu akkawo)
-            Ne yeopen naega manneun geot gata naege gihoereul jwo
-        </p>
-        <form action="#" method="post">
-            <h1>Let's do this!</h1>
-            <fieldset>
-                <div>
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
-                </div>
-    
-                <div>
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name">
-                </div>
-    
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
-                </div>
-    
-                <div>
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" id="phone_number" name="phone_number">
-                </div>
-    
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
-                </div>
-    
-                <div>
-                    <label for="con-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="con-password" name="con-password">
-                </div>
-            </fieldset>
-        </form>
+       <div class="div_left_side">
+        <div>
+            <h3 class="lyrics">[Chorus: Dahyun, Chaeyoung]</h3> 
+            <p class="lyrics"> 
+                Nega neomu akkawo
+                Ne namjareul bon jeogeun eopseodo (Neomu akkawo)
+                Mwora seolmyeonghal sun eopseodo (Neomu akkawo)
+                Ne yeopen naega manneun geot gata naege gihoereul jwo
+            </p>
+            <form action="#" method="post" id="form">
+                <h3 class="h3_inside_fieldset">Let's do this!</h3>
+                <fieldset>
+                    <div class="right_div">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name">
+                        </div>
 
-       </div>
-       
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </div>
+
+                    <div class="left_div">
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+            
+                        <div>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" id="phone_number" name="phone_number" required>
+                        </div>
+            
+                        <div>
+                            <label for="con-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="con-password" name="con_password" required>
+                        </div>
+                    </div>
+            
+                </fieldset>
+                        
+            </form>
+            <button type="submit" class="create_acc_btn">Create Account</button>
+                <p class="already_acc">Already have an account? <span>Log in</span></p>
+        </div>  
+
+        <script src="index.js"></script>
     </main>
 </body>
 </html>
