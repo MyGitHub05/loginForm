@@ -1,6 +1,7 @@
 const submit_btn = document.querySelector(".create_acc_btn");
 
-submit_btn.addEventListener('click', getValueInTheForm);
+
+submit_btn.addEventListener('submit', getValueInTheForm);
 
 
 function getValueInTheForm(){
@@ -15,7 +16,12 @@ function getValueInTheForm(){
 
     console.log(form);
 
-    if(password === con_password){
+    if(password !== con_password){
+        const warning = document.querySelector(".warning").innerHTML = "*Password do not match";
+        warning.style.color = "#FF3871";
+
+    }else{
+        
         console.log(fname);
         console.log(lname);
         console.log(email);
